@@ -9,7 +9,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#ff0000"/>
 <link rel="manifest" href="manifest.json">
+<script>
+        //if browser support service worker
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js');
+        };
+</script>
 <style>
       body,h1 {font-family: "Raleway", Arial, sans-serif}
       h1 {letter-spacing: 6px}
